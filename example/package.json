@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "nuxt-start",
+    "build": "nuxt build",
+    "preinstall": "npm install ../"
+  },
+  "dependencies": {
+    "nuxt-env-injector": "^0.0.1",
+    "nuxt-start": "^2.12.0"
+  },
+  "devDependencies": {
+    "nuxt": "^2.12.0",
+    "core-js": "^2.6.11"
+  }
+}

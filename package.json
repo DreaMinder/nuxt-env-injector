@@ -1,0 +1,27 @@
+{
+  "contributors": [
+    {
+      "name": "DreaMinder",
+      "email": "dreaminder7@gmail.com"
+    }
+  ],
+  "description": "Nuxt.js module that helps to inject env vars on runtime",
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/DreaMinder/nuxt-env-injector",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "nuxt-env-injector",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DreaMinder/nuxt-env-injector.git"
+  },
+  "version": "0.0.1",
+  "dependencies": {
+    "replace-in-file": "^5.0.2"
+  }
+}
