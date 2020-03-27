@@ -20,9 +20,7 @@ Basically it is the second solution I mentioned above (marker-replacer-script), 
 4. Voilà. You have your Nuxt-app running only with variables that you used for `docker run` command (on in your CD config).
 
 ### How to use
-WIP. Check /example dir for now.
+WIP. Check `/example/README.md` for now.
 
 ### Caveats ⚠️ ⚠️ ⚠️ 
-Don't use with `NODE_ENV` or flag-variables. Module logic is not ideal, it is ⚠️ Work In Progress ⚠️.
-
-### How to use
+Don't use with `NODE_ENV` or flag-variables. You need all your env vars to be passed to `docker run`, values assigned on build-time will be ereased. Module logic is not ideal, it is ⚠️ Work In Progress ⚠️.

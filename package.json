@@ -11,7 +11,7 @@
   ],
   "homepage": "https://github.com/DreaMinder/nuxt-env-injector",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "lib/module.js",
   "name": "nuxt-env-injector",
   "publishConfig": {
     "access": "public"
@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/DreaMinder/nuxt-env-injector.git"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "replace-in-file": "^5.0.2"
   }
