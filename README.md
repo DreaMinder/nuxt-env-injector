@@ -24,3 +24,5 @@ WIP. Check `/example/README.md` for now.
 
 ### Caveats ⚠️ ⚠️ ⚠️ 
 Don't use with `NODE_ENV` or flag-variables. Doesn't work with variables that are used in head section of nuxt.config. You need all your env vars to be passed to `docker run`, values assigned on build-time will be ereased. Module logic is not ideal, it is ⚠️ Work In Progress ⚠️.
+
+Turns out there is a [simillar project](https://github.com/koumoul-dev/nuxt-config-inject), you can try it instead.
