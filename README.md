@@ -14,10 +14,10 @@ If you make a [research](https://github.com/nuxt/nuxt.js/issues/5100), there are
 
 ### How does it work
 Basically it is the second solution I mentioned above (marker-replacer-script), but this time you don't need to think about implementation, it just works*.
-1. Before Nuxt started building its bundle, the module iterates every variable you mentioned in `env` option of `nuxt.config.js` and replaces iw with a special marker: `%%INJECTED_VARKEY%%`
+1. Before Nuxt started building its bundle, the module iterates every variable you mentioned in `env` option of `nuxt.config.js` and replaces it with a special marker: `%%INJECTED_VARKEY%%`
 2. Nuxt builds a bundle that has markers instead of actual variables values, for example `baseURL: '%%INJECTED_VARKEY%%'`. At this point the bundle will be saved inside of Docker image.
 3. You are trying to start the Docker image I mentioned above. Before Nuxt starts, the module iterates though every .js file inside of `.nuxt` dir and replaces markers with actual variables you passed to your Docker image.
-4. Voilà. You have your Nuxt-app running only with variables that you used for `docker run` command (on in your CD config).
+4. Voilà. You have your Nuxt-app running only with variables that you used for `docker run` command (or in your CD config).
 
 ### How to use
 WIP. Check `/example/README.md` for now.
