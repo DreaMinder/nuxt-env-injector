@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/DreaMinder/nuxt-env-injector.git"
   },
-  "version": "0.0.4",
+  "version": "0.0.5",
   "dependencies": {
     "replace-in-file": "^5.0.2"
   }
