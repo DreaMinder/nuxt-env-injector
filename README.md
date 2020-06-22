@@ -8,9 +8,10 @@ You only need to install this module to solve this issue.
 
 ### Why other solutions don't work
 If you make a [research](https://github.com/nuxt/nuxt.js/issues/5100), there are basically three solutions:
-1. Use Vuex to store the variables. Or use [nuxt-env](https://github.com/samtgarson/nuxt-env) module that stores variables in nuxt context `this.$env`. In most cases, you need your variables outside of nuxt context, for example baseURL for http-client, so it doesn't work well.
-2. Use [regex-powered script](https://github.com/nuxt/nuxt.js/issues/5100#issuecomment-476032241) that replaces variables on every nuxt-server start. It works, but you'll have to store your variables keys both in script-file and docker-file to make it work. Not perfect.
-3. Use `window.__CONFIG__ = {}` object hardcoded into page template. This only works for SPA-projects.
+1. Use recently introduced native solution called [Runtime Config](https://nuxtjs.org/guide/runtime-config). Without doubts, this is the right solution, but you'll need to rewrite the way you use environment variables in case you have existing codebase.
+2. Use Vuex to store the variables. Or use [nuxt-env](https://github.com/samtgarson/nuxt-env) module that stores variables in nuxt context `this.$env`. In most cases, you need your variables outside of nuxt context, for example baseURL for http-client, so it doesn't work well.
+3. Use [regex-powered script](https://github.com/nuxt/nuxt.js/issues/5100#issuecomment-476032241) that replaces variables on every nuxt-server start. It works, but you'll have to store your variables keys both in script-file and docker-file to make it work. Not perfect.
+4. Use `window.__CONFIG__ = {}` object hardcoded into page template. This only works for SPA-projects.
 
 ### How does it work
 Basically it is the second solution I mentioned above (marker-replacer-script), but this time you don't need to think about implementation, it just works*.
